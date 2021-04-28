@@ -1,0 +1,47 @@
+*{
+box-sizing:border-box;
+}
+button{
+	width: 250px;
+	height: 50px;
+	background-color: #ffe66b;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s all;
+	outline: none;
+	&:hover{
+		background-color: rgb(248, 131, 194);
+		color: #fff;
+	}
+   &:active{
+		background-color: rgb(253, 176, 103);
+	}	
+   &:focus{
+		background-color: rgb(122, 116, 116);
+	}
+	
+}
+.circle{
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	border-radius: 100%;
+	margin-top: 10px;
+	transition: 0.5s all;
+	&:nth-child(2n){
+      background-color: rgb(252, 5, 5);
+	}
+	&::before{
+			content:'';
+			display: block;
+			height:2px;
+			width: 0%;
+			background-color: #000;
+			transition: 0.5s all;
+	}
+	&:hover {
+      &::before{
+			width: 100%;
+		}
+   }
+}

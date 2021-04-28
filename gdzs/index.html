@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Приложение ГДЗС.</title>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu">
+			<nav class="menu_list">
+				<img src="img/IMG_1804.JPG" alt="">
+				<a href="#">Расчёт давления и времени</a>
+				<a href="#">О приложении</a>
+				<a href="config.html">Настройки</a>
+				<a href="#">Выход</a>
+			</nav>
+		</div>
+		<section class="header">
+			<a href="#" class="menu_btn">
+				<span></span>
+			</a>
+			<div class="header_text">Расчёт давления и времени</div>
+			<a href="#" class="arrows_btn">
+				<img src="img/rounded.png" alt="">
+			</a>
+		</section>
+		<section class="content">
+			<div class="container">
+				<div class="top_title">Oтветы</div>
+				<div class="top">
+					<div class="top_item">Т.общ<br>
+						<<результат>>
+					</div>
+					<div class="top_item">P.max.пад<br>
+						<<результат>>
+					</div>
+					<div class="top_item">Т.возвр<br>
+						<<результат>>
+					</div>
+					<div class="top_item">Т.раб<br>
+						<<результат>>
+					</div>
+					<div class="top_item">P.к.вых<br>
+						<<результат>>
+					</div>
+					<div class="top_item">Т.вых<br>
+						<<результат>>
+					</div>
+				</div>
+				<div class="middle_title">Настройка условий</div>
+				<div class="middle">
+            <div><label>Нормальные условия</label><input type="radio" value="1"
+            		style="vertical-align:middle;margin:0 0 0 20px;" /></div>
+				<div><label>Очаг найден</label><input type="radio" value="2" style="vertical-align:middle;margin:0 0 0 86px;" />
+				</div>
+				<div><label>Воздух</label><input type="radio" value="3" style="vertical-align:middle;margin:0 0 0 130px;" /></div>
+				</div>
+				<div class="entrance_title">Давление у входа</div>
+				<div class="entrance_time">12:00</div>
+				<div class="entrance">
+					<div class="entrance_item">300</div>
+					<div class="entrance_item">300</div>
+					<div class="entrance_item">300</div>
+				</div>
+				<div class="hearth_title">Давление у очага</div>
+				<div class="hearth_time">12:35</div>
+				<div class="hearth">
+					<div class="hearth_item">290</div>
+					<div class="hearth_item">285</div>
+					<div class="hearth_item">280</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$('.menu_btn').on('click', function () {
+			$('.menu').toggleClass('menu_active');
+		});
+		$('.menu').on('click', function () {
+			$('.menu').toggleClass('menu_active__left');
+		});
+	</script>
+
+</body>
+
+</html>
